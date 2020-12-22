@@ -1,0 +1,104 @@
+/*Screen sizes*/
+$screen_small: "576px";
+$screen_medium: "768px";
+$screen_large: "992px";
+$screen_xlarge: "1200px";
+
+$mobile: "only screen and (max-width: #{$screen_small - 1})";
+$mobile_landscape: "only screen and (min-width: #{$screen_small}) and (orientation : landscape)";
+
+$tablet: "only screen and (min-width: #{$screen_medium})";
+$tablet_portrait: "only screen and (min-width: #{$screen_medium}) and (orientation : portrait)";
+$tablet_landscape: "only screen and (min-width: #{$screen_medium}) and (orientation : landscape)";
+$tablet_max: "only screen and (max-width: #{$screen_large - 1})";
+$normal: "only screen and (min-width: #{$screen_large})";
+$desktop: "only screen and (min-width: #{$screen_xlarge})";
+
+/* Fonts */ 
+$main-font: 'Metropolis', 'Gill Sans', Arial, sans-serif;
+
+@font-face {
+    font-family: 'Metropolis';
+    font-style: normal;
+    font-weight: normal;
+    src: url('../fonts/metropolis-regular-webfont.woff2') format('woff2'),
+         url('../fonts/metropolis-regular-webfont.woff') format('woff'),
+         url('../fonts/metropolis-regular-webfont.eot'),
+         url('../fonts/metropolis-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/metropolis-regular-webfont.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'icomoon';
+    font-display: block;
+    font-style: normal;
+    font-weight: normal;
+	src: url('../fonts/icomoon.eot?n8uyye');
+    src: url('../fonts/icomoon.eot?n8uyye#iefix') format('embedded-opentype'),
+         url('../fonts/icomoon.ttf?n8uyye') format('truetype'),
+         url('../fonts/icomoon.woff?n8uyye') format('woff'),
+         url('../fonts/icomoon.svg?n8uyye#icomoon') format('svg');
+}
+[class^="icon-"] {
+	font-family: 'icomoon' !important;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+}
+[class*="icon"] {
+	font-family: 'icomoon' !important;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+}
+
+.icon-clock {
+	&:before {
+		content: "\e900";
+	}
+}
+.icon-facebook {
+	&:before {
+		content: "\e901";
+	}
+}
+.icon-instagram {
+	&:before {
+		content: "\e902";
+	}
+}
+.icon-mail {
+	&:before {
+		content: "\e904";
+	}
+}
+.icon-phone {
+	&:before {
+		content: "\e903";
+	}
+}
+
+
+/* Font sizes */
+$font_xsmall: 0.6rem;
+$font_small: 0.8rem;
+$font_medium: 1rem;
+$font_big: 1.2rem;
+
+/* Colors */
+$black: #000000;
+$gray: #A5B0A3;
+$darkgray: #818b7e;
+$white: #FFFFFF;
+$ocre: #E1AF09;
+
+/* Font Weight*/
+$light-weight: 200;
+$normal-weight: 400;
+$medium-weight: 500;
+$bold-weight: 700;
+$xbold-weight: 800;

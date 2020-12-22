@@ -1,0 +1,15 @@
+header, p, footer, nav, h1, h2, h3, h4, h5, h6, form, input, option, textarea {
+    font-family: Metropolis, Montserrat, 'Gill Sans', Arial, sans-serif;
+}
+
+@import 'variables';
+
+@import 'header';
+
+@import 'footer';
+
+@import 'sillones';
+
+@import 'contact';
+
+@import 'varios'

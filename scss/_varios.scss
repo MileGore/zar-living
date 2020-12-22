@@ -1,0 +1,62 @@
+h1 {
+    color: $ocre;
+    margin-left: 150px;
+    margin: 50px;
+  }
+  
+  h2 {
+    font-size: $font_small;
+  }
+  p {
+    font-size: $font_medium;
+    margin: 20px;
+    padding: 20px;
+    text-align: center;
+  }
+  form {
+    display: inline;
+  }
+  section.product_info {
+    background-color: $darkgray;
+    border: dotted;
+    border-color: $gray;
+    padding: 5px;
+    margin: 20px;
+  }
+  
+ 
+  section.foto__producto {
+    text-align: center;
+  }
+  section.foto__producto img {
+    margin: 40px;
+    padding: 3px;
+    border: solid 4px$black;
+  }
+  
+  @keyframes 'banner' {
+    0% {
+      margin-left: -20%;
+    }
+    50% {
+      margin-left: 50%;
+    }
+    100% {
+      margin-left: 100%;
+    }
+  }
+  div.ban {
+    background-color:$black;
+    color:$white;
+    margin: auto;
+    text-transform: uppercase;
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+  p.banner {
+    animation: banner 7s infinite linear;
+    display: inline-block;
+    text-align: center;
+  }
+  

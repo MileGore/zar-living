@@ -1,0 +1,266 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: 'icomoon';
+    src:  url('../fonts/icomoon.eot?n8uyye');
+    src:  url('../fonts/icomoon.eot?n8uyye#iefix') format('embedded-opentype'),
+      url('../fonts/icomoon.ttf?n8uyye') format('truetype'),
+      url('../fonts/icomoon.woff?n8uyye') format('woff'),
+      url('../fonts/icomoon.svg?n8uyye#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+  }
+  
+  [class^="icon-"], [class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+}
+  .icon-clock:before {
+    content: "\e900";
+  }
+  .icon-facebook:before {
+    content: "\e901";
+  }
+  .icon-instagram:before {
+    content: "\e902";
+  }
+  .icon-mail:before {
+    content: "\e904";
+  }
+  .icon-phone:before {
+    content: "\e903";
+  }
+  
+  
+@font-face {
+    font-family: Metropolis;
+    src: url('../fonts/metropolis-regular-webfont.woff2') format('woff2'),
+         url('../fonts/metropolis-regular-webfont.woff') format('woff'),
+         url('../fonts/metropolis-regular-webfont.eot'),
+         url('../fonts/metropolis-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/metropolis-regular-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+header, p, footer, nav, h1, h2, h3, h4, h5, h6, form, input, option, textarea {
+    font-family: Metropolis, Montserrat, 'Gill Sans', Arial, Helvetica, sans-serif;
+}
+/* ------------------------------header -------------------*/
+
+.barra__menu {
+    background-color: black;
+}
+.estilo__hamburger__button .navbar-toggler-icon{
+    background-image:url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E")
+}
+
+ul.font-color li a {
+    color: white;
+    text-transform: uppercase;
+    font-size: medium;
+}
+.navbar-dark .navbar-nav .nav-link {
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-size: 1rem;
+    }
+.navbar-dark .navbar-nav .nav-link:hover {
+    color: rgb(233, 202, 24);
+}
+.dropdown-toggle::after {
+    display:none
+}
+.dropdown-menu {
+  text-align: right;
+  background-color: black;
+  color: white;
+}
+
+
+@media (min-width: 991px ) {
+  .row {
+      position: relative;
+  }
+  .bottom-align-text {
+  position: absolute;
+  bottom: 1rem;
+  right: 1rem;
+  }
+  .dropdown-menu {
+    text-align: left;
+  }
+}
+@media (max-width: 991px ) {
+  .row {
+      position: relative;
+  }
+  .bottom-align-text {
+  bottom: 1rem;
+  text-align: right;
+  }
+}
+.container-fluid {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+/*---------------------- productos -------------------*/
+.parent {
+    width: 974px;
+    height: auto;
+    display: grid;
+    margin: auto;
+    margin-top: 50px;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    gap: 30px;
+    grid-template-areas:
+    "div1 div2 div3 div4"
+    "div5 div6 div7 div8";
+    }
+    
+.div1 {
+     grid-area: div1;
+}
+.div2 {
+     grid-area: div2;
+}
+.div3 {
+     grid-area: div3; 
+}
+.div4 {
+     grid-area: div4;
+}
+.div5 {
+     grid-area: div5; 
+}
+.div6 {
+     grid-area: div6; 
+}
+.div7 {
+     grid-area: div7; 
+}
+.div8 {
+     grid-area: div8; 
+}
+
+@media only screen and (max-width: 768px) {
+    .parent {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas:
+        "div1 div2"
+        "div3 div4"
+        "div5 div6"
+        "div7 div8"
+
+    }
+}
+
+/* ------------varios----------*/
+
+
+
+h1 {
+    color: rgb(221, 164, 8);
+    margin-left: 150px;
+    margin: 50px;
+}
+
+h2 {
+    font-size: 0.75rem;
+}
+p {
+    font-size: 1rem;
+    margin: 20px;
+    padding: 20px;
+    text-align: center;
+}
+form {
+    display: inline;
+}
+section.product_info {
+    background-color: rgb(196, 196, 196);
+    border: dotted;
+    border-color: rgb(170, 170, 170);
+    padding: 5px;
+    margin: 20px;
+}
+
+div.contact {
+    padding: 10px;
+    margin: 50px;
+    text-align: center;
+}
+
+section.foto__producto {
+    text-align: center;
+}
+section.foto__producto img {
+    margin: 40px;
+    padding: 3px;
+    border: solid 4px black;
+}
+
+
+/* ----------------------- FORMULARIO CONTACTO ---------------------- */
+
+form input{
+    color: white;
+    padding: 5px;
+}
+form textarea{
+    color: white;
+}
+form option{
+    color: white;
+}
+form select{
+    background-color: black;
+    color: white;
+}
+input {
+    background-color: black;
+}
+textarea {
+    background-color: black;
+}
+option {
+    background-color: black;
+}
+
+
+/* ----------------------- FOOTER ---------------------- */
+footer {
+    background-color: black;
+    font-size: 0.95rem;
+    letter-spacing: 1px;
+    bottom: 0;
+    padding: 20px;
+  }
+  div.redes__sociales ul li{
+    list-style-type: none;
+    text-align: right;
+  }
+  div.redes__sociales ul li a {
+    text-decoration: none;
+    color: white;
+  }
+  div.redes__sociales ul li a:hover {
+    color: rgb(207, 177, 3)
+  }
+  @media (max-width: 575px ) {
+   .text-sm-center {
+     text-align: center;
+    }
+  }

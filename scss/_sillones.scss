@@ -1,0 +1,6 @@
+@each $sillon in nazareth, athenas, bahia {
+    #{$sillon}-icon {
+        background-image: url('../imagenes/#{$sillon}.jpg');
+    }
+}
+

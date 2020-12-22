@@ -1,0 +1,37 @@
+footer {
+	background-color: $black;
+	bottom: 0;
+	color: $white;
+    font-size: $font_small;
+    letter-spacing: 0.8px;
+	padding: 20px;
+}
+
+div.redes__sociales {
+	ul {
+		li {
+			letter-spacing: 0.8px;
+			list-style-type: none;
+			text-align: right;
+			a {
+                color: $white;
+				text-decoration: none;
+				&:hover {
+					color: $ocre;
+			  	}
+			}
+		}
+	}
+}
+.font-weight-bold {
+	letter-spacing: 2px;
+	text-transform: uppercase;
+}
+
+div.footer-copyright {
+	border-top: dotted 1px $gray;
+	color: $darkgray;
+	font-size: $font_xsmall;
+	padding: 10px;
+    text-align: center;
+}
