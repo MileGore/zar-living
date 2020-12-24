@@ -1,6 +1,7 @@
 @each $sillon in nazareth, athenas, bahia {
-    #{$sillon}-icon {
+    .#{$sillon}-icon {
         background-image: url('../imagenes/#{$sillon}.jpg');
     }
 }
 
+.estoy_probando_git
