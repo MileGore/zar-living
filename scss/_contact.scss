@@ -1,34 +1,20 @@
-form {
-	input {
-		color: $white;
-		padding: 5px;
-	}
-	textarea {
-		color: $white;
-	}
-	option {
-		color: $white;
-	}
-	select {
-		background-color: $black;
-		color: $white;
-	}
-}
-input {
-	background-color: $black;
-}
-textarea {
-	background-color: $black;
-}
-option {
-	background-color: $black;
-}
+
 div.contact {
     padding: 10px;
-    margin: 50px;
+    margin: 20px;
     text-align: center;
 }
 div.mapa {
-	padding: 40px;
+	padding: 20px;
 	text-align: center;
 }
+
+form.clearfix {
+	.name {
+		width: 50%;
+	}
+	.tel {
+		width: 50%;
+	}
+}
+

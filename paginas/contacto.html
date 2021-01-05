@@ -5,6 +5,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="stylesheet" href="../css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/main.css">
+    <link rel="icon" href="../imagenes/" type="image/x-icon"/>
+    <link rel="shortcut icon" href="../imagenes/zar_icon.ico" type="image/x-icon"/>
     <meta charset="UTF-8">
     <meta name="keywords" content="FABRICA DE SILLONES, FABRICA DE MUEBLES, MUEBLES, CALIDAD,  GARANTIA,  VILLA CRESPO, CABALLITO,  ANGEL GALLARDO, CID CAMPEADOR, PARQUE CENTENARIO, CABA, CONTACTO, UBICACION, SUCURSALES">
     <meta name="description" content="En Villa Crespo, el corazón de la Capital, se encuentra ZAR living, una empresa especializada en muebles, sillones y decoración, todo en un mismo lugar!">
@@ -16,7 +18,7 @@
 <!-----------------------------------------MENU -------------------------------------------->
 
 <div class="container-fluid logo"><img src="../imagenes/logo.png" class="img-fluid" alt="Logo Zar Living"></div>
-<nav class="navbar navbar-expand-lg navbar-dark bg-nav">
+<nav class="navbar navbar-expand-lg navbar-dark bg-nav shadow">
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample08" aria-controls="navbarsExample08" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -60,42 +62,60 @@
 
     <!--Seccion Contacto-->
 
-   <h1 class="titulo">Contacto</h1>
-        <div class="contact">
-            <form name="contact_form" action="../gracias.html" class="mi__formulario" method="POST">
-                <label for="form_name">Nombre:</label>
-                    <input type="text" name="nombre" id="form_name" required placeholder="Bruno Diaz"><br><br>
-                <label for="form_tel">Telfono:</label>
-                    <input type="tel" name="telefono" id="form_tel" placeholder="1123452345"><br><br>
-                <label for="form_email">E-mail:</label>
-                    <input type="email" name="email" id="form_email" required placeholder="example@zar.com"><br><br>
-                <span>Motivo:</span>
-                    <select name="motivo">
-                        <option value="consulta">Consulta</option>
-                        <option value="opinion">Opinion</option>
-                        <option value="presupuesto">Presupuesto</option>
-                        <option value="otros">Otros</option>
-                    </select><br><br>
-                <label for="form_msn">Mensaje:</label><br>
-                    <textarea name="mensaje" id="form_msn" rows="10" cols="30" placeholder="Hola, queria consultar..."></textarea><br><br>
-                <span>Como nos conociste?</span><br><br>
-                    <input type="checkbox" name=redes_sociales id="redes_sociales">
-                        <label for="redes_sociales">Redes Sociales</label><br>
-                    <input type="checkbox" name=publicidad id="publicidad">
-                        <label for="publicidad">Publicidad</label><br>
-                    <input type="checkbox" name=recomendacion id="recomendacion">
-                        <label for="recomendacion">Recomendacion</label><br>
-                    <input type="checkbox" name=otros id="otros">
-                        <label for="otros">Otros</label><br><br>
-                <input type="reset" value="Restaurar">
-                <input type="submit" value="Enviar">
-            </form>
-        </div>
+
 
    <!--Aca iria imagen con Google Maps-->
-   <div class="mapa container"><iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13135.568790323827!2d-58.44346!3d-34.6068874!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x7226076341bfc86!2sZAR%20living!5e0!3m2!1ses-419!2sar!4v1608497103202!5m2!1ses-419!2sar" width="80%" height="350" frameborder="0"></iframe>  
-   </div>
-   
+<div class="container">
+  <div class="row d-flex flex-column-reverse flex-md-row align-items-center">
+    <div class="col-md-6 mapa p-2">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13135.568790323827!2d-58.44346!3d-34.6068874!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x7226076341bfc86!2sZAR%20living!5e0!3m2!1ses-419!2sar!4v1608497103202!5m2!1ses-419!2sar" width="100%" height="500" frameborder="0">
+      </iframe>
+    </div>                       
+    <div class="col-md-6 p-2">
+      <h1 class="titulo">Contacto</h1>
+        <form name="contact_form" action="../gracias.html" method="POST">  
+          <div class="clearfix">
+            <div class="name form-group float-left">
+              <label for="form_name">Nombre y Apellido:</label>
+                <input type="text" class="form-control" name="nombre" id="form_name" placeholder="Bruno Diaz">
+            </div>
+          <div class="tel form-group float-right">
+              <label for="form_tel">Teléfono/Celular: (opcional)</label>
+                <input type="tel" name="telefono" class="form-control" id="form_tel" placeholder="1123452345">
+          </div>
+        </div>
+            <div class="form-group">
+              <label for="form_email">E-mail:</label>
+                <input type="email" name="email" id="form_email" class="form-control" placeholder="example@zarliving.com" required>
+            </div>         
+            <div class="form-group">
+              <label for="form_msg">Mensaje</label>
+                <textarea id="form_msg" name="mensaje" class="form-control" rows="4" placeholder="Hola, queria consultar..." spellcheck="false">
+                </textarea>
+            </div>
+            <div class="form-group">
+              <p>Como nos conociste?</p>
+              <label class="checkbox-inline" for="via_publica">
+                <input type="checkbox" name="via_publica" id="via_publica"> Vía Pública
+              </label>
+              <label class="checkbox-inline" for="redes_sociales">
+                <input type="checkbox" name="redes_sociales" id="redes_sociales"> Redes Sociales
+              </label>
+              <label class="checkbox-inline" for="publicidad">
+                <input type="checkbox" name="publicidad" id="publicidad"> Publicidad
+              </label>
+              <label class="checkbox-inline" for="recomendacion">
+                <input type="checkbox" name="recomendacion" id="recomendacion"> Recomendación
+              </label>
+            </div>
+            <div class="col-3 d-flex float-right">
+              <button type="submit" class="btn btn-lg shadow">ENVIAR
+              </button>
+            </div>
+        </form>
+    </div>
+  </div>
+</div>
 <!----------------------------------------- FOOTER ------------------------------------------>
 
 <footer>
@@ -140,3 +160,4 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </body>
 </html>
+
