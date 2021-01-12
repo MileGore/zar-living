@@ -2,8 +2,9 @@ h1 {
     color: $black;
     text-transform: uppercase;
     font-size: $font_xl;
-    font-weight: $bold-weight;
-    padding: 1rem;
+    font-weight: $xbold-weight;
+    padding-bottom: 1rem;
+    letter-spacing: 3px;
   }
   
   h2 {

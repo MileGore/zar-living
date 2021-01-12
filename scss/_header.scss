@@ -1,5 +1,7 @@
 .logo {
 	text-align: center;
+	margin-bottom: 1rem;
+	margin-top: 0.6rem;
 }
 .bg-nav {
 	background-color: $black;
@@ -11,7 +13,6 @@ ul.font-color {
 	li {
 		a {
 			color: $white;
-			justify-content: space-around;
 			text-transform: uppercase;
 			font-size: $font_medium;
 		}
@@ -22,12 +23,15 @@ ul.font-color {
 		.nav-link {
 			color: $white;
 			text-transform: uppercase;
-			letter-spacing: 4px;
+			letter-spacing: 6px;
 			font-size: $font_big;
 			&:hover {
 				color: $ocre;
 			}
 		}
+	}
+	.navbar-toggler {
+		border: none;
 	}
 }
 .dropdown-toggle {
@@ -59,8 +63,6 @@ ul.font-color {
 	}
 	.dropdown-menu {
 		text-align: left;
-		color: white;
-		text-transform: uppercase;
 	}
 }
 @media (max-width: 991px ) {
@@ -71,4 +73,10 @@ ul.font-color {
 		bottom: 1rem;
 		text-align: right;
 	}
+}
+@media (min-width: 992px) {
+    .navbar li {
+        margin-left : 1rem;
+        margin-right : 1rem;
+    }
 }

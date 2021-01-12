@@ -1,20 +1,55 @@
 
-div.contact {
-    padding: 10px;
-    margin: 20px;
-    text-align: center;
-}
-div.mapa {
-	padding: 20px;
-	text-align: center;
-}
+form {
+    font-size: $font_small;
+    text-transform: uppercase;
+    input {
+        color: $gray;
 
-form.clearfix {
-	.name {
-		width: 50%;
-	}
-	.tel {
-		width: 50%;
-	}
+    }
+    .form-control {
+        border-color: $black;
+        font-size: $font_small;
+        border-radius: 0px;
+            &:focus {
+                border-color: $black;
+                box-shadow:0 0 5px .1rem $gray;
+            }
+    }
+    .textarea {
+        margin-bottom: 0;
+    }
+    .required {
+        font-size: $font_xsmall;
+        color: $darkgray;
+    }
+    .oneline-form {
+        display: table;
+        padding-bottom: 15px;
+        .oneline-input {
+            display: table-cell;
+            width: auto;
+        }
+    }
+    .checkbox-inline {
+            padding-right: 1.1rem;
+            display: inline-block;
+            overflow:hidden
+    }
+    .btn {
+        background-color: $black;
+        font-size: $font_small;
+        text-transform: uppercase;
+        font-weight: $bold-weight;
+        color: $white;
+        margin-top: 20px;
+        border-radius: 0%;
+            &:hover {
+                color: $ocre;
+            }
+    }
+    .thank_you {
+        padding: 100px 40px 100px;
+        margin: 20px;
+        text-align: center;
+        }
 }
-
