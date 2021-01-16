@@ -15,18 +15,7 @@ $normal: "only screen and (min-width: #{$screen_large})";
 $desktop: "only screen and (min-width: #{$screen_xlarge})";
 
 /* Fonts */ 
-$main-font: 'Metropolis', 'Gill Sans', Arial, sans-serif;
-
-@font-face {
-    font-family: 'Metropolis';
-    font-style: normal;
-    font-weight: normal;
-    src: url('../fonts/metropolis-regular-webfont.woff2') format('woff2'),
-         url('../fonts/metropolis-regular-webfont.woff') format('woff'),
-         url('../fonts/metropolis-regular-webfont.eot'),
-         url('../fonts/metropolis-regular-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/metropolis-regular-webfont.ttf') format('truetype');
-}
+$main-font: Montserrat, 'Gill Sans', Arial, sans-serif;
 
 @font-face {
     font-family: 'icomoon';

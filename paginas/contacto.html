@@ -1,9 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <title>Zar Living - Contacto y Ubicacion</title>
+    <title>Zar Living - Contacto y Ubicación</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/animate.min.css">
     <link rel="stylesheet" href="../css/main.css">
     <link rel="icon" href="../imagenes/" type="image/x-icon"/>
     <link rel="shortcut icon" href="../imagenes/zar_icon.ico" type="image/x-icon"/>
@@ -15,10 +17,9 @@
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 </head>
 <body>
-
 <!-----------------------------------------MENU -------------------------------------------->
-
-<div class="container-fluid logo"><img src="../imagenes/logo.png" class="img-fluid" alt="Logo Zar Living"></div>
+<div class="container-fluid logo">
+    <a href="../index.html"><img src="../imagenes/logo.png" class="img-fluid" alt="Logo Zar Living"></a></div>
 <nav class="navbar navbar-expand-lg navbar-dark bg-nav shadow">
     <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarsExample08" aria-controls="navbarsExample08" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -57,69 +58,65 @@
       </ul>
     </div>
   </nav>
-  
-  <!-----------------------------------------FIN MENU ---------------------------------------->
-
-    <!--Seccion Contacto-->
-
-
-
-   <!--Aca iria imagen con Google Maps-->
+<!------------------------------FIN MENU - INICIA SECCION ---------------------------------->
 <div class="container-fluid container-lg">
-  <div class="row d-flex flex-column-reverse flex-md-row align-items-center m-4 contact">
-    <div class="col-md-6 mapa p-2">
-      <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13135.568790323827!2d-58.44346!3d-34.6068874!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x7226076341bfc86!2sZAR%20living!5e0!3m2!1ses-419!2sar!4v1608497103202!5m2!1ses-419!2sar" width="100%" height="500" frameborder="0">
-      </iframe>
-    </div>                       
-    <div class="col-md-6 p-2">
-      <h1>Contacto</h1>
-        <form name="contact_form" method="POST">  
-          <div class="oneline-form">
-            <div class="form-group oneline-input pr-3">
-              <label for="form_name">Nombre y Apellido:*</label>
-                <input type="text" class="form-control" size="60" name="nombre" id="form_name" placeholder="Bruno Diaz">
-            </div>
-          <div class="form-group oneline-input">
-              <label for="form_tel">Teléfono: (opcional)</label>
-                <input type="tel" name="telefono" size="40" class="form-control" id="form_tel" placeholder="1123452345">
-          </div>
-        </div>
-            <div class="form-group">
-              <label for="form_email">E-mail:*</label>
-                <input type="email" name="email" id="form_email" class="form-control" placeholder="example@zarliving.com" required>
-            </div>         
-            <div class="form-group textarea">
-              <label for="form_msg">Mensaje:*</label>
-                <textarea id="form_msg" name="mensaje" class="form-control" rows="4" placeholder="Hola, quería consultar..." spellcheck="false"></textarea>
-            </div>
-            <p class="required">*Campos obligatorios</p>
-            <div class="checkbox">
-              <p>Cómo nos conociste?</p>
-              <label class="checkbox-inline" for="via_publica">
-                <input type="checkbox" name="via_publica" id="via_publica"> Vía Pública
-              </label>
-              <label class="checkbox-inline" for="redes_sociales">
-                <input type="checkbox" name="redes_sociales" id="redes_sociales"> Redes Sociales
-              </label>
-              <label class="checkbox-inline" for="publicidad">
-                <input type="checkbox" name="publicidad" id="publicidad"> Publicidad
-              </label>
-              <label class="checkbox-inline" for="recomendacion">
-                <input type="checkbox" name="recomendacion" id="recomendacion"> Recomendación
-              </label>
-            </div>
-            <div class="d-flex float-right">
-              <button type="submit" class="btn" onclick="document.getElementById('id01').style.display='block'">E N V I A R</button>
-                <div id="id01" class="w3-modal">
-                  <div class="w3-modal-content w3-animate-top">
-                    <span onclick="document.getElementById('id01').style.display='none'" class="w3-button w3-display-topright">&times;</span>
-                    <p class="thank_you">Gracias por tu consulta! Te responderemos a la brevedad</p>
-                  </div>
+    <div class="row d-flex flex-column-reverse flex-md-row align-items-center m-4">
+        <div class="col-md-6 mapa p-2">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13135.568790323827!2d-58.44346!3d-34.6068874!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x7226076341bfc86!2sZAR%20living!5e0!3m2!1ses-419!2sar!4v1608497103202!5m2!1ses-419!2sar" width="100%" height="500" frameborder="0"></iframe>
+        </div>                       
+        <div class="col-md-6 p-2">
+        <h1>Contacto ZAR living</h1>
+            <form name="contact_form" method="POST">  
+                <div class="row">
+                    <div class="col-sm-6">
+                        <div class="form-group">
+                            <label for="form_name">Nombre y Apellido:*</label>
+                            <input type="text" class="form-control" size="60" name="nombre" id="form_name" placeholder="Bruno Diaz">
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="form-group">
+                            <label for="form_tel">Teléfono:</label>
+                            <input type="tel" name="telefono" size="40" class="form-control" id="form_tel" placeholder="1123452345">
+                        </div>
+                    </div>
                 </div>
-            </div>
-        </form>
+                <div class="form-group">
+                    <label for="form_email">E-mail:*</label>
+                    <input type="email" name="email" id="form_email" class="form-control" placeholder="example@zarliving.com" required>
+                </div>         
+                <div class="form-group textarea">
+                    <label for="form_msg">Mensaje:*</label>
+                        <textarea id="form_msg" name="mensaje" class="form-control" rows="4" placeholder="Hola, quería consultar..." spellcheck="false"></textarea>
+                </div>
+                <p class="required">*Campos obligatorios</p>
+                <p>Cómo nos conociste?</p>
+                <div class="checkbox d-flex justify-content-between flex-wrap">
+                    <label class="checkbox-inline" for="via_publica">
+                        <input type="checkbox" name="via_publica" id="via_publica"> Vía Pública
+                    </label>
+                    <label class="checkbox-inline" for="redes_sociales">
+                        <input type="checkbox" name="redes_sociales" id="redes_sociales"> Redes Sociales
+                    </label>
+                    <label class="checkbox-inline" for="publicidad">
+                        <input type="checkbox" name="publicidad" id="publicidad"> Publicidad
+                    </label>
+                    <label class="checkbox-inline" for="recomendacion">
+                        <input type="checkbox" name="recomendacion" id="recomendacion"> Recomendación
+                    </label>
+                </div>
+                <div class="d-flex float-right">
+                    <button type="submit" class="btn" onclick="document.getElementById('id01').style.display='block'">E N V I A R</button>
+                    <div id="id01" class="w3-modal">
+                        <div class="w3-modal-content w3-animate-top">
+                            <span onclick="document.getElementById('id01').style.display='none'" class="w3-button w3-display-topright">&times;</span>
+                            <p class="thank_you">Gracias por tu consulta! Te responderemos a la brevedad</p>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
     </div>
-  </div>
 </div>
 <!----------------------------------------- FOOTER ------------------------------------------>
 <footer>

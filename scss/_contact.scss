@@ -1,55 +1,47 @@
-
 form {
     font-size: $font_small;
     text-transform: uppercase;
     input {
         color: $gray;
-
+    }
+    .btn {
+        background-color: $black;
+        border-radius: 0%;
+        color: $white;
+        font-size: $font_small;
+        font-weight: $bold-weight;
+        margin-top: 20px;
+        text-transform: uppercase;
+            &:hover {
+                color: $ocre;
+            }
+    }
+    .checkbox-inline {
+        padding-right: 1rem;
+        text-align: center;
     }
     .form-control {
         border-color: $black;
-        font-size: $font_small;
         border-radius: 0px;
+        font-size: $font_small;
             &:focus {
                 border-color: $black;
                 box-shadow:0 0 5px .1rem $gray;
             }
     }
+    .required {
+        color: $darkgray;
+        font-size: $font_xsmall;
+    }
     .textarea {
         margin-bottom: 0;
     }
-    .required {
-        font-size: $font_xsmall;
-        color: $darkgray;
-    }
-    .oneline-form {
-        display: table;
-        padding-bottom: 15px;
-        .oneline-input {
-            display: table-cell;
-            width: auto;
-        }
-    }
-    .checkbox-inline {
-            padding-right: 1.1rem;
-            display: inline-block;
-            overflow:hidden
-    }
-    .btn {
-        background-color: $black;
-        font-size: $font_small;
-        text-transform: uppercase;
-        font-weight: $bold-weight;
-        color: $white;
-        margin-top: 20px;
-        border-radius: 0%;
-            &:hover {
-                color: $ocre;
-            }
-    }
     .thank_you {
-        padding: 100px 40px 100px;
         margin: 20px;
+        padding: 100px 40px 100px;
         text-align: center;
         }
+    .w3-modal {
+        width: 100%;
+    }
 }

@@ -1,5 +1,5 @@
-header, p, footer, nav, h1, h2, h3, h4, h5, h6, form, input, option, textarea {
-    font-family: Metropolis, Montserrat, 'Gill Sans', Arial, sans-serif;
+h1, h2, h3 , h4, h5, h6, p, footer, nav, form, input, option, textarea {
+    font-family: Montserrat, 'Gill Sans', Arial, sans-serif;
 }
 
 @import 'variables';
@@ -12,4 +12,6 @@ header, p, footer, nav, h1, h2, h3, h4, h5, h6, form, input, option, textarea {
 
 @import 'contact';
 
-@import 'varios'
+@import 'varios';
+
+@import 'gallery';
