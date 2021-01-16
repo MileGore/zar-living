@@ -11,7 +11,10 @@
 .card {
     border: none;
     padding: 15px;
-    cursor: pointer
+    cursor: pointer;
+    &:hover {
+        border: solid $gray;
+    }
 }
 
 .time i {
