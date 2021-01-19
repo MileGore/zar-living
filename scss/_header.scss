@@ -12,7 +12,6 @@
 ul.font-color {
 	li {
 		a {
-			color: $white;
 			text-transform: uppercase;
 			font-size: $font_medium;
 		}
@@ -32,7 +31,11 @@ ul.font-color {
 	}
 	.navbar-toggler {
 		border: none;
+		align-items: right;
 	}
+}
+.dropdown-menu {
+	background-color: $black;
 }
 .dropdown-toggle {
 	&::after {
@@ -40,9 +43,13 @@ ul.font-color {
 	}
 }
 .dropdown-item {
-	text-align: right;
+	text-align: left;
 	background-color: $black;
 	color: $white;
+	&:hover {
+		background-color: $black;
+		color: $gray;
+	}
 }
 .container-fluid {
 	padding-left: 0px;
@@ -62,7 +69,7 @@ ul.font-color {
 		right: 1rem;
 	}
 	.dropdown-menu {
-		text-align: left;
+		text-align: right;
 	}
 }
 @media (max-width: 991px ) {
@@ -80,3 +87,5 @@ ul.font-color {
         margin-right : 1rem;
     }
 }
+
+

@@ -1,22 +1,20 @@
-.custom-badge {
-    background-color: #343a40 !important;
-    color: #fff;
-    font-size: 11px;
-    padding: 5px;
-    padding-left: 11px;
-    padding-right: 11px;
-    border-radius: 7px
-}
-
 .card {
     border: none;
     padding: 15px;
     cursor: pointer;
-    &:hover {
-        border: solid 3px $gray !important;
+    .hvr-shrink {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+        &:hover, .hvr-shrink:focus, .hvr-shrink:active {
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
+         }
     }
-}
-
-.time i {
-    color: #cacacaa3
 }

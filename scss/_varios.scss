@@ -1,15 +1,12 @@
 h1 {
-    font-family: Montserrat, 'Gill Sans', Arial, sans-serif;
     color: $black;
     text-transform: uppercase;
     font-size: $font_xl;
+    font-weight: $bold-weight;
     padding-bottom: 0.5rem;
     letter-spacing: 3px;
   }
-  
-  h2 {
-    font-size: $font_small;
-  }
+
   form {
     display: inline;
   }
@@ -29,21 +26,5 @@ h1 {
     margin: 40px;
     padding: 3px;
     border: solid 4px$black;
-  }
-  
-
-  div.ban {
-    background-color:$black;
-    color:$white;
-    margin: auto;
-    text-transform: uppercase;
-    width: 100%;
-    white-space: nowrap;
-    overflow: hidden;
-  }
-  p.banner {
-    animation: banner 7s infinite linear;
-    display: inline-block;
-    text-align: center;
   }
   
