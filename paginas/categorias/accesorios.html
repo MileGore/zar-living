@@ -5,6 +5,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../../css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2/css/lightbox.min.css">
     <link rel="stylesheet" href="../../css/main.css">
     <link rel="icon" href="../../imagenes/" type="image/x-icon"/>
     <link rel="shortcut icon" href="../../imagenes/zar_icon.ico" type="image/x-icon"/>
@@ -67,14 +68,15 @@
     </div>
 </nav>
   <!-----------------------------------------FIN MENU ---------------------------------------->
-
-  <div class="container-fluid container-md mt-5">
-    <h1>Complementos y decoración</h1>
+<div class="container-fluid container-md mt-5 lightbox-gallery">
+  <h1 class="text-center">Complementos y decoración</h1>
     <div class="row">
       <div class="col-lg-4 col-sm-6">
         <div class="card">
           <div class="text-center hvr-shrink">
-            <img src="../../imagenes/complementos/bahamas.png" width="250" alt="Puff Bahamas">
+            <a href="../../imagenes/complementos/bahamas.png" data-lightbox="photos">
+              <img src="../../imagenes/complementos/bahamas.png" width="250" alt="Puff Bahamas">
+            </a>
           </div>
           <div class="text-center mt-2">
             <h5>PUFF BAHAMAS</h5>
@@ -84,8 +86,9 @@
       <div class="col-lg-4 col-sm-6">
         <div class="card">
           <div class="text-center hvr-shrink">
-            <img src="../../imagenes/complementos/cubo.png" width="250" alt="Puff Cubo">
-          </div>
+            <a href="../../imagenes/complementos/cubo.png" data-lightbox="photos">
+              <img src="../../imagenes/complementos/cubo.png" width="250" alt="Puff Cubo">
+            </a>          </div>
           <div class="text-center mt-2">
             <h5>PUFF CUBO</h5>
           </div>
@@ -94,8 +97,9 @@
       <div class="col-lg-4 col-sm-6">
         <div class="card">
           <div class="text-center hvr-shrink">
-            <img src="../../imagenes/complementos/puff.png" width="250" alt="Puff para Sofá">
-          </div>
+            <a href="../../imagenes/complementos/puff.png" data-lightbox="photos">
+              <img src="../../imagenes/complementos/puff.png" width="250" alt="Puff para Sofá">
+            </a>          </div>
           <div class="text-center mt-2">
             <h5>PUFF PARA SOFÁ</h5>
           </div>
@@ -104,7 +108,6 @@
     </div>
 </div>
 <!----------------------------------------- FOOTER ------------------------------------------>
-
 <footer>
   <div class="container">
     <div class="row">
@@ -140,9 +143,8 @@
   © 2020 Zar Living. Todos los derechos reservados.
   </div>
 </footer>
-  
 <!--------------------------------------- FIN DE FOOTER ---------------------------------------->
-
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2/js/lightbox.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script> 
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </body>

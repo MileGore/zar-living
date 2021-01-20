@@ -5,6 +5,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../../css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2/css/lightbox.min.css">
     <link rel="stylesheet" href="../../css/main.css">
     <link rel="icon" href="../../imagenes/" type="image/x-icon"/>
     <link rel="shortcut icon" href="../../imagenes/zar_icon.ico" type="image/x-icon"/>
@@ -68,13 +69,15 @@
     </div>
 </nav>
   <!-----------------------------------------FIN MENU ---------------------------------------->
-  <div class="container-fluid container-md mt-5">
-    <h1>Mesas</h1>
+<div class="container-fluid container-md mt-5 lightbox-gallery">
+  <h1 class="text-center">Mesas</h1>
     <div class="row">
       <div class="col-lg-4 col-sm-6">
         <div class="card">
           <div class="text-center hvr-shrink">
-            <img src="../../imagenes/mesas/mesa_arrime.png" width="250" alt="Mesa de Arrime">
+            <a href="../../imagenes/mesas/mesa_arrime.png" data-lightbox="photos">
+              <img src="../../imagenes/mesas/mesa_arrime.png" width="250" alt="Mesa de Arrime">
+            </a>
           </div>
           <div class="text-center mt-2">
             <h5>MESA DE ARRIME</h5>
@@ -84,7 +87,9 @@
       <div class="col-lg-4 col-sm-6">
         <div class="card">
           <div class="text-center hvr-shrink">
-            <img src="../../imagenes/mesas/mesa_comedor.png" width="250" alt="Mesa de Comedor">
+            <a href="../../imagenes/mesas/mesa_comedor.png" data-lightbox="photos">
+              <img src="../../imagenes/mesas/mesa_comedor.png" width="250" alt="Mesa de Comedor">
+            </a>
           </div>
           <div class="text-center mt-2">
             <h5>MESA DE COMEDOR</h5>
@@ -94,7 +99,9 @@
       <div class="col-lg-4 col-sm-6">
         <div class="card">
           <div class="text-center hvr-shrink">
-            <img src="../../imagenes/mesas/mesa_ratona.png" width="250" alt="Mesa Ratona">
+            <a href="../../imagenes/mesas/mesa_ratona.png" data-lightbox="photos">
+              <img src="../../imagenes/mesas/mesa_ratona.png" width="250" alt="Mesa Ratona">
+            </a>
           </div>
           <div class="text-center mt-2">
             <h5>MESA RATONA</h5>
@@ -104,7 +111,9 @@
       <div class="col-lg-4 col-sm-6">
         <div class="card">
           <div class="text-center hvr-shrink">
-            <img src="../../imagenes/mesas/juego_nido.png" width="250" alt="Juego de Mesa Nido">
+            <a href="../../imagenes/mesas/juego_nido.png" data-lightbox="photos">
+              <img src="../../imagenes/mesas/juego_nido.png" width="250" alt="Juego de Mesa Nido">
+            </a>
           </div>
           <div class="text-center mt-2">
             <h5>JUEGO DE MESA NIDO</h5>
@@ -114,7 +123,9 @@
       <div class="col-lg-4 col-sm-6">
         <div class="card">
           <div class="text-center hvr-shrink">
-            <img src="../../imagenes/mesas/nido_alta.png" width="250" alt="Mesa Nido Alta">
+            <a href="../../imagenes/mesas/nido_alta.png" data-lightbox="photos">
+              <img src="../../imagenes/mesas/nido_alta.png" width="250" alt="Mesa Nido Alta">
+            </a>
           </div>
           <div class="text-center mt-2">
             <h5>MESA NIDO ALTA</h5>
@@ -124,7 +135,9 @@
       <div class="col-lg-4 col-sm-6">
         <div class="card">
           <div class="text-center hvr-shrink">
-            <img src="../../imagenes/mesas/nido_baja.png" width="250" alt="Mesa Nido Baja">
+            <a href="../../imagenes/mesas/nido_baja.png" data-lightbox="photos">
+              <img src="../../imagenes/mesas/nido_baja.png" width="250" alt="Mesa Nido Baja">
+            </a>
           </div>
           <div class="text-center mt-2">
             <h5>MESA NIDO BAJA</h5>
@@ -134,7 +147,6 @@
     </div>
 </div>
 <!----------------------------------------- FOOTER ------------------------------------------>
-
 <footer>
   <div class="container">
     <div class="row">
@@ -170,10 +182,9 @@
   © 2020 Zar Living. Todos los derechos reservados.
   </div>
 </footer>
-  
-  <!--------------------------------------- FIN DE FOOTER ---------------------------------------->
-
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script> 
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<!--------------------------------------- FIN DE FOOTER ---------------------------------------->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2/js/lightbox.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script> 
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </body>
 </html>

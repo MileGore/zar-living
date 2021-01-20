@@ -5,6 +5,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../../css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2/css/lightbox.min.css">
     <link rel="stylesheet" href="../../css/main.css">
     <link rel="icon" href="../../imagenes/" type="image/x-icon"/>
     <link rel="shortcut icon" href="../../imagenes/zar_icon.ico" type="image/x-icon"/>
@@ -67,44 +68,35 @@
     </div>
 </nav>
   <!-----------------------------------------FIN MENU ---------------------------------------->
-  <div class="container mt-5">
+<div class="container-fluid container-md mt-5 lightbox-gallery">
+  <h1 class="text-center">Respaldos</h1>
     <div class="row">
-        <div class="col-md-4">
-            <div class="card">
-                <div class="text-center"> <img src="https://i.imgur.com/TbtwkyW.jpg" width="250"> </div>
-                <div class="text-center">
-                    <h5>Amazon Echo</h5>
-                </div>
-            </div>
+      <div class="col-lg-4 col-sm-6">
+        <div class="card">
+          <div class="text-center hvr-shrink">
+            <a href="../../imagenes/respaldos/resp_tachas.png" data-lightbox="photos">
+              <img src="../../imagenes/respaldos/resp_tachas.png" width="250" alt="Respaldo con Tachas">
+            </a>
+          </div>
+          <div class="text-center mt-2">
+            <h5>RESPALDO CON TACHAS</h5>
+          </div>
+          </div>
         </div>
-        <div class="col-md-4">
-            <div class="card">
-                <div class="text-center"><img src="../../imagenes/esquineros/esq_monaco.png" id="myImg" width="250" alt="esq monaco">
-                  <div id="myModal" class="modal">
-                    <span class="close">&times;</span>
-                    <img class="modal-content" id="img01">
-                    <div id="caption">Esquinero de dos modulos</div>
-                  </div></div>
-                <div class="text-center">
-                    <h5>Kruve Coffee Filters</h5>
-                </div>
-            </div>
+      <div class="col-lg-4 col-sm-6">
+        <div class="card">
+          <div class="text-center hvr-shrink">
+            <a href="../../imagenes/respaldos/resp_tiraje.png" data-lightbox="photos">
+              <img src="../../imagenes/respaldos/resp_tiraje.png" width="250" alt="Respaldo con Tiraje">
+            </a>          </div>
+          <div class="text-center mt-2">
+            <h5>RESPALDO CON TIRAJE</h5>
+          </div>
         </div>
-        <div class="col-md-4">
-            <div class="card">
-                <div class="text-center"> <img src="https://i.imgur.com/aTqSahW.jpg" width="250"> </div>
-                <div class="text-center">
-                    <h5>Apple watch 2.0</h5>
-                </div>
-            </div>
-        </div>
+      </div>
     </div>
 </div>
-
-<!-- The Modal -->
-
 <!----------------------------------------- FOOTER ------------------------------------------>
-
 <footer>
   <div class="container">
     <div class="row">
@@ -142,8 +134,9 @@
 </footer>
   
   <!--------------------------------------- FIN DE FOOTER ---------------------------------------->
-  <script src="../../js/img_modal.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2/js/lightbox.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script> 
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </body>     
 </html>
+
