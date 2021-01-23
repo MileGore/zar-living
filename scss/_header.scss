@@ -34,6 +34,7 @@ ul.font-color {
 		align-items: right;
 	}
 }
+
 .dropdown-menu {
 	background-color: $black;
 }
@@ -73,11 +74,20 @@ ul.font-color {
 	}
 }
 @media (max-width: 991px ) {
+	img {
+		width: 200px;
+	}
 	.row {
 		position: relative;
 	}
 	.bottom-align-text {
 		bottom: 1rem;
+		text-align: right;
+	}
+	.nav-item {
+		text-align: right;
+	}
+	.dropdown-item {
 		text-align: right;
 	}
 }

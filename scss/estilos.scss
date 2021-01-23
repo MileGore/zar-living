@@ -1,3 +1,4 @@
+//-----------------------GENERALES-------------------------------//
 h1, h2, h3 , h4, h5, h6, p, footer, nav, form, input, option, textarea {
     font-family: Montserrat, 'Gill Sans', Arial, sans-serif;
 }
@@ -15,12 +16,10 @@ body {
 
 @import 'footer';
 
-@import 'sillones';
-
 @import 'contact';
 
 @import 'varios';
 
 @import 'gallery';
 
-@import 'product';
+@import 'grillas';
