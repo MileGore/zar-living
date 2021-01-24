@@ -1,7 +1,7 @@
 .logo {
-	text-align: center;
 	margin-bottom: 1rem;
 	margin-top: 0.6rem;
+	text-align: center;
 }
 .bg-nav {
 	background-color: $black;
@@ -9,32 +9,23 @@
 .navbar-light .navbar-toggler-icon{
 	background-image:url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E")
 }
-ul.font-color {
-	li {
-		a {
-			text-transform: uppercase;
-			font-size: $font_medium;
-		}
-	}
-}
 .navbar-dark {
 	.navbar-nav {
 		.nav-link {
 			color: $white;
-			text-transform: uppercase;
-			letter-spacing: 6px;
 			font-size: $font_big;
+			letter-spacing: 6px;
+			text-transform: uppercase;
 			&:hover {
 				color: $ocre;
 			}
 		}
 	}
 	.navbar-toggler {
-		border: none;
 		align-items: right;
+		border: none;
 	}
 }
-
 .dropdown-menu {
 	background-color: $black;
 }
@@ -47,6 +38,8 @@ ul.font-color {
 	text-align: left;
 	background-color: $black;
 	color: $white;
+	letter-spacing: 2px;
+	text-transform: uppercase;
 	&:hover {
 		background-color: $black;
 		color: $gray;
