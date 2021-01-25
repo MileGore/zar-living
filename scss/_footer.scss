@@ -6,6 +6,9 @@ footer {
     font-size: $font_small;
     letter-spacing: 0.8px;
 	padding: 20px;
+	#sticker_footer {
+		flex-shrink: none;
+	}
 	div.redes__sociales {
 		ul {
 			li {
