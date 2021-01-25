@@ -1,14 +1,10 @@
 footer {
 	background-color: $black;
 	bottom: 0;
-	margin-bottom: -200px;
 	color: $white;
     font-size: $font_small;
     letter-spacing: 0.8px;
 	padding: 20px;
-	#sticker_footer {
-		flex-shrink: none;
-	}
 	div.redes__sociales {
 		ul {
 			li {
